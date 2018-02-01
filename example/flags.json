@@ -1,5 +1,5 @@
 {
-	"text":    "So you said you prefer the color [fav_color=1](blue)(red).[fav_flag_set]( And you already told me your favorite flag, but you have maybe changed your mind.) So what's your favorite flag of this color?",
+	"text":    "So you said you prefer the color %fav_color=1%[blue][red].%fav_flag_set%[ And you already told me your favorite flag, but you have maybe changed your mind.] So what's your favorite flag of this color?",
 	"options": [
 		{
 			"text":          "Kazakhstan",
