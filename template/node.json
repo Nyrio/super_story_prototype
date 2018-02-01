@@ -1,0 +1,16 @@
+{
+	"text":    "",
+	"options": [
+		{
+			"text":          "",
+			"prerequisites": "",
+			"target":        "",
+			"consequences":  [
+				{
+					"variable": "",
+					"value":    ""
+				}
+			]
+		}
+	]
+}
