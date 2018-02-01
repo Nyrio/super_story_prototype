@@ -1,0 +1,19 @@
+{
+	"text":    "Ok, let's see together the first feature: choices. You can offer as many choices as you want, and bind them to different nodes.",
+	"options": [
+		{
+			"text":          "Go there...",
+			"prerequisites": "",
+			"target":        "color",
+			"consequences":  [
+			]
+		},
+		{
+			"text":          "...or there",
+			"prerequisites": "",
+			"target":        "color",
+			"consequences":  [
+			]
+		}
+	]
+}

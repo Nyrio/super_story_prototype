@@ -1,0 +1,7 @@
+{
+	"menu_text":     "Welcome to the story prototyping tool. In this short example I will show you the different features of the tool.",
+	"new_game_text": "Start the tour",
+	"starting_node": "intro",
+	"continue_text": "Continue where you were",
+	"quit_text":     "Quit"
+}

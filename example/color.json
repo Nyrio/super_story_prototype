@@ -1,0 +1,27 @@
+{
+	"text":    "You wonder what the other option would have been, true? ... Ok, to be honest I'm lazy and both options lead here. I hope you didn't hesitate too long on this.\nNow let's demonstrate all the power of choices with consequences. Do you prefer blue or red?",
+	"options": [
+		{
+			"text":          "Blue, of course.",
+			"prerequisites": "",
+			"target":        "save_system",
+			"consequences":  [
+				{
+					"variable": "fav_color",
+					"value":    "1"
+				}
+			]
+		},
+		{
+			"text":          "Red, definitely!",
+			"prerequisites": "",
+			"target":        "save_system",
+			"consequences":  [
+				{
+					"variable": "fav_color",
+					"value":    "2"
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,12 @@
+{
+	"text":    "We'll talk again about colors later. It would be too easy to do that now.\nLet's show you the save system. You can save your progression with S and quit with Q. Leaving doesn't automatically save your progression. Try that now, and when you're back you can continue.",
+	"options": [
+		{
+			"text":          "Continue",
+			"prerequisites": "",
+			"target":        "flags",
+			"consequences":  [
+			]
+		}
+	]
+}

@@ -1,0 +1,23 @@
+{
+	"text":    "We've shown some important features, you can learn more by reading the documentation.\nYou can try some other features here, like the history by choosing to come back, or be back to the menu (warning: it doesn't save your progression), or quit.",
+	"options": [
+		{
+			"text":          "Go to the menu",
+			"prerequisites": "",
+			"target":        "menu",
+			"consequences":  [
+			]
+		},
+		{
+			"text":          "Take me back",
+			"prerequisites": "",
+			"target":        "back",
+			"consequences":  [
+				{
+					"variable": "fav_flag_set",
+					"value":    "1"
+				}
+			]
+		}
+	]
+}
