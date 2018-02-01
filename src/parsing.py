@@ -1,3 +1,40 @@
+def parse_text(text, dico):
+    """Parse a text. See the full documentation for more information.
+    """
+    final_text = ""
+    i = 0
+    j = 0
+    while j != -1:
+        j = text.find("%", i)
+        if j == -1:
+            final_text += text[i:]
+        else:
+            final_text += text[i:j]
+            i = text.find("%", j+1)
+            expression = text[j+1:i]
+
+            j = find_matching(text, i+2, "[", "]")
+            option1 = text[i+2:j]
+
+            if len(text) > j+1 and text[j+1] == "[":
+                i = find_matching(text, j+2, "[", "]")
+                option2 = text[j+2:i]
+                if i != -1:
+                    i = i+1
+                    j = i
+            else:
+                option2 = ""
+                if j != -1:
+                    i = j+1
+                    j = i
+
+            good_option = (option1 if eval_expression(expression, dico)
+                            else option2)
+            final_text += parse_text(good_option, dico)
+
+    return final_text
+
+
 def eval_expression(expression, dico):
     """Evaluates an expression containing integer variables and the
     following operators: +, -, *, /, & (and), | (or), ! (not), <, >,
