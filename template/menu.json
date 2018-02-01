@@ -1,6 +1,7 @@
 {
 	"menu_text":     "Welcome to my story prototype!",
 	"new_game_text": "New Game",
+	"starting_node": "",
 	"continue_text": "Continue",
 	"quit_text":     "Quit"
 }
