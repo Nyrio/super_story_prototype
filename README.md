@@ -3,6 +3,8 @@ Super Story Prototype (SuStoy Pro)
 
 This project allows to quickly create a prototype for a story with choices and consequences. The story is described in a simple [json](https://en.wikipedia.org/wiki/JSON) format, and the progression can be saved, so that the testers don't have to play your story in one rush.
 
+I created the tools to make the development of my own games easier.
+
 An example story prototype is given in the example/ folder and givers you an overview of the features. To try it, after completing the **installation** step below, you can launch the program and give it as a parameter the folder `example`, and just follow the instructions.
 
 _Work in progress._
@@ -102,3 +104,6 @@ The text if the condition is false is optional. There must be no space between t
 This feature allow nesting. Just be careful to always close your brackets, otherwise you will have errors or the display will not be as you expect it to be.
 
 ## The save system
+At every node, an option allows to save the state of the game, and an option allows to quit. Saving the state of the game allows to come back at the same point, conserving the values of the variables and the history of nodes. The progress is saved in the file `save.txt` at the root of the project folder.
+
+Choosing to quit doesn't save the state of the game. It allows to come back to a strategic point, which is useful for testing purposes. The program currently doesn't support save slots, but if needed you can manually copy the file and replace it later with the copy to come back to some point.
