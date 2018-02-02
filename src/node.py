@@ -43,12 +43,24 @@ class Node:
         print(self.text)
 
         for i in range(len(self.options)):
-            print("%d. %s" % (i, self.options[i]["text"]))
+            print("%d. %s" % (i+1, self.options[i]["text"]))
 
-        print("S: save ; Q: quit")
+        print("s: save ; q: quit")
 
 
     def max_choice(self):
         """Give the biggest number which can be input to choose an option.
         """
         return len(self.options)
+
+
+    def chosen(self, choice, dico):
+        """Apply the consequences of a choice, and return the next node.
+        """
+        option = self.options[choice-1]
+
+        for consequence in option["consequences"]:
+            dico[consequence["variable"]] = (
+                eval_expression(consequence["value"], dico))
+
+        return option["target"]
