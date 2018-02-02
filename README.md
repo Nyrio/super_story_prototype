@@ -99,7 +99,7 @@ This is the most powerful feature of the tool: you can customize the description
 ```
 The text if the condition is false is optional. There must be no space between the percent symbol and bracket, and between closing bracket of the text if true and opening bracket of the text if false. Moreover, the percent symbol can't be used in the text because it will be interpreted as a condition. Brackets can be used elsewhere though.
 
-This feature allow nesting. Just be careful to always close your brackets, otherwise you will have errors or the display will not be as you expect it to be.
+This feature **allows nesting**. Just be careful to always close your brackets, otherwise you will have errors or the display will not be as you expect it to be.
 
 ## The save system
 At every node, an option allows to save the state of the game, and an option allows to quit. Saving the state of the game allows to come back at the same point, conserving the values of the variables and the history of nodes. The progress is saved in the file `save.txt` at the root of the project folder.
