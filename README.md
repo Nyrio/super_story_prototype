@@ -7,8 +7,6 @@ I created the tools to make the development of my own games easier.
 
 An example story prototype is given in the example/ folder and givers you an overview of the features. To try it, after completing the **installation** step below, you can launch the program and give it as a parameter the folder `example`, and just follow the instructions.
 
-_Work in progress._
-
 ## Installation
 To use this tool you need to [install Python 3](https://www.python.org/downloads/) (note: it is usually installed by default on Linux). Then:
 - on **Windows**: double-click on `sustoy.py`, and enter the name of the directory where the `menu.json` file is located. You can either give an absolute path (like `C:\Users\yourname\tools\sustoy\project`), or a relative path (just `project` for example).
